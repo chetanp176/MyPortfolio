@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Chetan P</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.css" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bar.css">
+    <link href="assets/css/Animate.css" rel="stylesheet" />
+    <style>
+        @font-face {
+            font-family: "Daredevil";
+            font-style: normal;
+            src: local("Daredevil"), url("assets/fonts/Daredevil Netflix Typeface by Jay Jay Killer.otf") format("truetype"); /* non-IE */
+        }
+
+        @font-face {
+            font-family: "Chapaza";
+            font-style: normal;
+            src: local("Chapaza"), url("assets/fonts/Chapaza.ttf") format("truetype"); /* non-IE */
+        }
+
+        @font-face {
+            font-family: "Digitalt";
+            font-style: normal;
+            src: local("Digitalt"), url("assets/fonts/Digitalt.ttf") format("truetype"); /* non-IE */
+        }
+
+        @font-face {
+            font-family: "dizzyedgeDemo";
+            font-style: normal;
+            src: local("Digitalt"), url("assets/fonts/dizzyedgeDemo.otf") format("truetype"); /* non-IE */
+        }
+
+        @font-face {
+            font-family: "Fyodor-Bold";
+            font-style: normal;
+            src: local("Fyodor-Bold"), url("assets/fonts/Fyodor-Bold.ttf") format("truetype"); /* non-IE */
+        }
+
+        @font-face {
+            font-family: "Fyodor-BoldCondensed";
+            font-style: normal;
+            src: local("Fyodor-BoldCondensed"), url("assets/fonts/Fyodor-BoldCondensed.ttf") format("truetype"); /* non-IE */
+        }
+
+        @font-face {
+            font-family: "Fyodor-BoldExpanded";
+            font-style: normal;
+            src: local("Fyodor-BoldExpanded"), url("assets/fonts/Fyodor-BoldExpanded.ttf") format("truetype"); /* non-IE */
+        }
+
+        .contentContainer {
+            background: #efefef;
+            padding: 20px;
+            margin: 15vh auto;
+            border-radius: 10px;
+            border: solid 5px #dbdbdb;
+        }
+
+        .progressBar {
+            margin-bottom: 26px;
+            margin-bottom: 1.66em;
+        }
+
+            .progressBar h4 {
+                font-size: 21px;
+                font-size: 1.33em;
+                text-transform: none;
+                font-family: Chapaza;
+                font-weight: bold;
+                margin-bottom: 7px;
+                margin-bottom: .33em;
+            }
+
+        .progressBarContainer {
+            width: 100%;
+            height: 26px;
+            height: 1.66em;
+            background: #e6eae3;
+            background: rgba(8,102,220,.2);
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .progressBarValue {
+            height: 1.66em;
+            float: left;
+            background: #0866dc;
+            background: rgba(8,102,220,.75);
+        }
+
+        .value-00 {
+            width: 0;
+        }
+
+        .value-05 {
+            width: 5%;
+        }
+
+        .value-10 {
+            width: 10%;
+        }
+
+        .value-15 {
+            width: 15%;
+        }
+
+        .value-20 {
+            width: 20%;
+        }
+
+        .value-25 {
+            width: 25%;
+        }
+
+        .value-30 {
+            width: 30%;
+        }
+
+        .value-35 {
+            width: 35%;
+        }
+
+        .value-40 {
+            width: 40%;
+        }
+
+        .value-45 {
+            width: 45%;
+        }
+
+        .value-50 {
+            width: 50%;
+        }
+
+        .value-55 {
+            width: 55%;
+        }
+
+        .value-60 {
+            width: 60%;
+        }
+
+        .value-65 {
+            width: 65%;
+        }
+
+        .value-70 {
+            width: 70%;
+        }
+
+        .value-75 {
+            width: 75%;
+        }
+
+        .value-80 {
+            width: 80%;
+        }
+
+        .value-85 {
+            width: 85%;
+        }
+
+        .value-90 {
+            width: 90%;
+        }
+
+        .value-95 {
+            width: 95%;
+        }
+
+        .value-100 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <section id="header" style="background-color: #202d4e">
+        <header>
+            <span class="image avatar">
+                <img src="images/avatar.jpg" alt="profile_image" />
+            </span>
+            <h1 id="logo"><a href="#" style="font-family: Daredevil; font-size: larger; color: rgba(208,27,35,1); text-decoration: none">Chetan Patil</a></h1>
+            <p>
+                You know that you’re doing something wrong
+                <br />
+                when no one hates you
+            </p>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="#one" class="active">Home</a></li>
+                <li><a href="#two">About Me</a></li>
+                <li><a href="#three">Skills</a></li>
+                <li><a href="#four">Projects</a></li>
+                <li><a href="#five">Contact</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <ul class="icons">
+                <li><a href="https://www.twitter.com/ChetanP1194" class="icon fa-twitter" style="text-decoration: none"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/Chetan77" class="icon fa-facebook" style="text-decoration: none"><span class="label">Facebook</span></a></li>
+                <li><a href="https://www.linkedin.com/in/chetan-patil-675705106" class="icon fa-linkedin" style="text-decoration: none"><span class="label">LinkedIn</span></a></li>
+                <li><a href="mailto:chetanpatil1194@gmail.com" class="icon fa-envelope" style="text-decoration: none"><span class="label">Email</span></a></li>
+            </ul>
+        </footer>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <div style="background-image: url(images/one.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover">
+
+            <div style="height: 20px"></div>
+
+            <div id="one" class="container" style="height: auto; background-color: rgba(240, 240, 240,0.8); width: 90%; text-align: right; border-radius: 10px; margin-right: auto; margin-left: auto; margin-bottom: 20px; padding: 1vw">
+                <div style="width: auto; margin-left: auto; margin-right: auto;" class="zoomInDown">
+                    <h3 style="text-align: center; font-size: 12vw; font-family: Fyodor-BoldExpanded;"><b style="color:blueviolet">HELLO!</b></h3>
+                    <br />
+                    <h4 style="text-align: center; font-size: 7vw; font-family: Chapaza;color:rgba(208,27,35,1)"><span style="color:black">I'M</span> CHETAN,</h4>
+                    <h2 style="text-align: center; font-size: 3vw; font-family: dizzyedgeDemo;color:darkcyan">A BUDDING WEB DEVELOPER/DESIGNER</h2>
+                    <br />
+                    <h4 style="text-align: center; font-size: 5vw; font-family: Fyodor-Bold;color:black">FROM BANGALORE,</h4>
+                    <h4 style="text-align: center; font-size: 4.5vw; font-family: Digitalt;color:tomato">THE IT CAPITAL OF INDIA.</h4>
+                </div>
+            </div>
+
+            <div id="two" class="container" style="height: auto; background-color: rgba(240, 240, 240,0.8); width: 90%; text-align: right; border-radius: 10px; padding: 35px; margin-right: auto; margin-left: auto;">
+
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="img-responsive">
+                            <img src="images/profile.jpg" style="width: 100%" />
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-1" style="text-align: justify; padding: 15px;">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 style="font-family: Digitalt; text-align: center">My Story</h1>
+                                <p style="font-family:Chapaza;font-size:medium">
+                                    &emsp;&emsp;Let me introduce myself. My name is Chetan Patil. I come from Dharwad city of Karnataka state. Dharwad is famous for its Legendary musicians and the iconic sweet "Dharwad Pedha" .
+                                </p>
+                                <p style="font-family:Chapaza;font-size:medium">
+                                    &emsp;&emsp;I was born on 6th November of year 1994. My zodiac sign is Scorpio. I am passionate, stubborn and a true friend, believes only on facts.
+                                    I am determined and decisive, and will research until i find out the truth.
+                                </p>
+                                <p style="font-family:Chapaza;font-size:medium">
+                                    &emsp;&emsp;From the time of my birth i have been in 4 states Madhya Pradesh, Andhra Pradesh, Maharashtra and finally back to my native Karnataka.
+                                </p>
+                                <p style="font-family:Chapaza;font-size:medium">
+                                    &emsp;&emsp;In India's society holding an engineer gets you respect. So after my 10+2 as most kids of my age did, i too got into engineering stream. I completed my engineering in the stream of Mechanical engineering in the month of may 2016.
+                                </p>
+                                <p style="font-family:Chapaza;font-size:medium">
+                                    &emsp;&emsp;Well now i got you thinking that how would a mechanical engineer develop web applications or design web applications. Answer to that question is that from age of 13 i was fond and passionate of Computers.
+                                    So i decided that one day i would develop an application that would be used by everyone.
+                                </p>
+                                <p style="font-family:Chapaza;font-size:medium">
+                                    &emsp;&emsp;Currently i am working at TechMahindra .ltd, Bangalore as Associate Software Engineer, exploring the world of being a Developer.
+                                </p>
+                                <div style="text-align: center">
+                                    <a href="assets/CV.pdf" target="_blank" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i> Download Resume</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-sm-12" style="text-align: center; font-family: dizzyedgeDemo;">
+                        <h1>Random Things about Me</h1>
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/282535.jpg" style="width: 100%; text-align: left" />
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1" style="text-align: left">
+                        <br />
+                        <ul class="list-unstyled list-group" style="font-family: Chapaza; line-height: 30px; font-size: large;font-weight:bold">
+                            <li>I idolize Iron Man</li>
+                            <li>I love playing action video games</li>
+                            <li>Being a typical south-indian, i love curd rice</li>
+                            <li>I want superpower of reading other's mind</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="height: 20px"></div>
+
+        </div>
+
+        <div style="background-image: url(images/two.jpg); background-repeat: no-repeat; background-attachment: fixed;">
+
+            <div style="height: 20px"></div>
+
+            <div id="three" class="container" style="height: auto; background-color: rgba(240, 240, 240,0.8); width: 90%; text-align: right; border-radius: 10px; padding-right: 100px; margin-right: auto; margin-left: auto; margin-bottom: 20px; padding: 35px">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 style="font-family: Fyodor-Bold; color: rgba(208,27,35,1); text-align: center">Web Developement/ Designing Skills</h1>
+                    </div>
+                </div>
+                <br />
+
+                <div class="well" style="text-align: left">
+                    <div class="progressBar">
+                        <h4>HTML5</h4>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-85" style="text-align: center; color: white; font-weight: bold">85%</div>
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <h4>CSS3</h4>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-80" style="text-align: center; color: white; font-weight: bold">80%</div>
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <h4>Javscript</h4>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-60" style="text-align: center; color: white; font-weight: bold">60%</div>
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <h4>Jquery</h4>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-20" style="text-align: center; color: white; font-weight: bold">20%</div>
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <h4>Bootstrap</h4>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-50" style="text-align: center; color: white; font-weight: bold">50%</div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <div class="row" style="text-align: center">
+                    <div class="col-sm-12">
+                        <h1 style="font-family: Fyodor-Bold; color: #202d4e;">Other Skills</h1>
+                    </div>
+                </div>
+                <br />
+
+                <div class="well" style="text-align: left">
+                    <div class="progressBar">
+                        <h4>Mechanical part design using Siemens NX 9.0</h4>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-90" style="text-align: center; color: white; font-weight: bold">90%</div>
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <h4>Reading adventure novels</h4>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-100" style="text-align: center; color: white; font-weight: bold">100%</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="four" class="container" style="height: auto; background-color: rgba(240, 240, 240,0.8); width: 90%; text-align: right; border-radius: 10px; padding: 30px; margin-right: auto; margin-left: auto;">
+
+                <div class="well">
+                    <div class="row">
+                        <div class="col-sm-12" style="text-align: center">
+                            <h1 style="font-family: dizzyedgeDemo; width: 100%">Projects</h1>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="well" style="width:80%;margin-left:auto;margin-right:auto;">
+                        <div class="row">
+                            <div class="col-sm-12" style="text-align: center">
+                                <h1 style="font-family: Chapaza; font-size: x-large">Analysis of shock absorber spring</h1>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3" style="text-align: center">
+                                <img src="images/shock.jpg" style="width: 100%;" />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1" style="text-align: justify;font-family:Cambria;font-size:medium">
+                                <p style="text-align: center;font-size:large;font-family:'Times New Roman', Times, serif">
+                                    <b style="color:crimson">This was an academic project undertaken in final semester of my engineering degree</b>
+                                </p>
+                                <p>&emsp;&emsp;This project dealt with modeling of the helical spring of a shock absorber by using the modeling software Solidworks.Structural analysis was carried out on the spring by using ANSYS software.</p>
+                                <p><b style="color:blue">Scenario: </b> The analysis is carried out in two methods, first method is by varying the load on the spring and second one is by varying the spring material.</p>
+                                <p>&emsp;&emsp;The analysis is carried out to determine the suitable material for the spring and also to check the maximum load it can sustain. The result obtained by this analysis is compared with analytical results. The analytical result is obtained by calculating the stress and displacement for the spring theoretically.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="well" style="width:80%;margin-left:auto;margin-right:auto;">
+                        <div class=" row">
+                            <div class="col-sm-12" style="text-align: center">
+                                <h1 style="font-family: Chapaza; font-size: x-large">Exchange rate calculation system</h1>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-sm-12" style="text-align: center">
+                                <img src="images/Capture.PNG" style="width: 100%;" />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1" style="text-align: justify;font-family:Cambria;font-size:medium">
+                                <p style="text-align: center;font-size:large;font-family:'Times New Roman', Times, serif">
+                                    <b style="color:crimson">This was a project undertaken by me after learning web developing and web designing</b>
+                                </p>
+                                <p>&emsp;&emsp;I had to make a web application consisting of web service that would return the current exchange rate for currencies. It can be used by any bank to compute the value of a money transaction that is given in a foreign currency. Then, respond to the request with total value of the currency. </p>
+                                <p><b style="color:blue">Scenario: </b> A software company in Los Angeles has many Employees as software engineer from different countries. They are servicing the company on a contract basis. Thus after the termination of the contract as per the agreement, employees might return to their respective countries.</p>
+                                <p>&emsp;&emsp;Their savings need to be converted into their respective country currency, therefore the employee has to request to the bank in which he holds his account to convert his savings to the currency of his respective country. The bank would then use this application to convert the currency, and respond back to employee the value of converted currency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="height: 20px"></div>
+
+        </div>
+
+        <div style="background-image: url(images/contact.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover">
+
+            <div style="height: 20px"></div>
+
+            <div id="five" class="container" style="height: auto; background-color: rgba(10, 10, 10,0.8); width: 90%; text-align: right; border-radius: 10px; margin-right: auto; margin-left: auto; padding: 20px">
+
+                <div style="width: 45%; position: relative; float: left; text-align: center;">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:deepskyblue">
+                                <b>
+                                    If you need to get in touch with me,<br />
+                                    you can reach me at :
+                                </b>
+                            </h2>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2" style="text-align: left; color:whitesmoke">
+                            <h4 style="font-family: Calibri,sans-serif">Contact Number :</h4>
+                            <h4 style="font-family: Calibri,sans-serif">+91 9035569873</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2" style="text-align: left; color:whitesmoke">
+                            <h4 style="font-family: Calibri,sans-serif"> Email-Id :</h4>
+                            <h4 style="font-family: Calibri,sans-serif"> chetanpatil1194@gmail.com</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="well" style="width: 50%; position: relative; float: right;">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><b>Send me an email</b></h2>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-3" style="font-family: 'Bookman Old Style'; color: black; font-weight: bold; font-size: large">
+                            <h4>Name</h4>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-1">
+                            <input type="text" class="form-control" style="border-bottom: 3px solid black" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-3" style="font-family: 'Bookman Old Style'; color: black; font-weight: bold; font-size: large">
+                            <h4>Email-Id</h4>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-1">
+                            <input type="text" class="form-control" style="border-bottom: 3px solid black" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-3" style="font-family: 'Bookman Old Style'; color: black; font-weight: bold; font-size: large">
+                            <h4>Message</h4>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-1">
+                            <textarea name="Text1" cols="40" rows="5" class="form-control" style="border-bottom: 3px solid black"></textarea>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <input type="submit" value="Send email" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="height: 20px"></div>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollzer.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/graph.js"></script>
+
+</body>
+</html>
